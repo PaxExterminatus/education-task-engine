@@ -1,5 +1,5 @@
 <template lang="pug">
-  #app.edu-task-app
+  .edu-tasks-app
     edu-task-set
 </template>
 
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="sass">
-.edu-task-app
+.edu-tasks-app
   border: 1px solid red
   height: 94vh
   max-height: 480px
