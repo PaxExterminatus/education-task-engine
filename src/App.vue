@@ -4,20 +4,21 @@
 </template>
 
 <script>
-import eduTaskSet from './components/eduTask/eduTaskSet'
+import EduTaskSet from './components/eduTask/EduTaskSet'
 
 export default {
   name: 'App',
   components: {
-    eduTaskSet
+    EduTaskSet
   }
 }
 </script>
 
 <style lang="sass">
 $clr-border-1: red
-$clr-border-2: #006300
+$clr-border-2: #000
 $clr-txt-1: #2c3e50
+
 .edu-tasks-app
   color: $clr-txt-1
   font: 100% Arial, Helvetica, sans-serif

@@ -1,0 +1,64 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "question": {
+        "label": "This beautiful building ... three hundred years ago.",
+        "answers": [
+          {"id":1, "label":"is built"},
+          {"id":2, "label":"was build"},
+          {"id":3, "label":"has been built"},
+          {"id":4, "label":"was built"}],
+        "correct": 1
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "label": "John said that he ... this place before.",
+        "answers": [
+          {"id":1, "label":"has never seen"},
+          {"id":2, "label":"never saw"},
+          {"id":3, "label":"had never seen"},
+          {"id":4, "label":"hasn't never seen"}]
+      },
+      "correct": 4
+    },
+    {
+      "id": 3,
+      "question": {
+        "label": "Do you really think they are ... to buy this expensive car?",
+        "answers": [
+          {"id":1, "label":"enough rich"},
+          {"id":2, "label":"rich enough"},
+          {"id":3, "label":"richer"},
+          {"id":4, "label":"rich"}]
+      },
+      "correct": 3
+    },
+    {
+      "id": 4,
+      "question": {
+        "label": "Before she ... she ... her father.",
+        "answers": [
+          {"id":1, "label":"came home/had visited"},
+          {"id":2, "label":"came home/has visited"},
+          {"id":3, "label":"had come /visited"},
+          {"id":4, "label":"had came /had visited"}]
+      },
+      "correct": 4
+    },
+    {
+      "id": 5,
+      "question": {
+        "label": "... sugar on the table?",
+        "answers": [
+          {"id":1, "label":"Is there any"},
+          {"id":2, "label":"Are there any"},
+          {"id":3, "label":"Is there a few"},
+          {"id":4, "label":"Are there a few"}]
+      },
+      "correct": 2
+    }
+  ]
+}
