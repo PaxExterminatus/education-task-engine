@@ -30,4 +30,14 @@ $clr-txt-1: #2c3e50
     border: 1px solid $clr-border-2
     .totals
       text-align: center
+    .answer-radio
+      display: none
+    .answer-label
+      display: block
+      cursor: pointer
+      border: 1px solid #7FDBFF
+      margin: 5px 0
+      padding: 10px 5px
+    .answer-label:hover
+      border-color: #0074D9
 </style>

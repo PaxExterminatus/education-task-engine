@@ -2,6 +2,7 @@
   "tasks": [
     {
       "id": 1,
+      "type": "chooseReplace",
       "question": {
         "label": "This beautiful building ... three hundred years ago.",
         "answers": [
@@ -14,6 +15,7 @@
     },
     {
       "id": 2,
+      "type": "chooseReplace",
       "question": {
         "label": "John said that he ... this place before.",
         "answers": [
@@ -26,6 +28,7 @@
     },
     {
       "id": 3,
+      "type": "chooseReplace",
       "question": {
         "label": "Do you really think they are ... to buy this expensive car?",
         "answers": [
@@ -38,18 +41,20 @@
     },
     {
       "id": 4,
+      "type": "chooseReplace",
       "question": {
         "label": "Before she ... she ... her father.",
         "answers": [
-          {"id":1, "label":"came home/had visited"},
-          {"id":2, "label":"came home/has visited"},
-          {"id":3, "label":"had come /visited"},
-          {"id":4, "label":"had came /had visited"}]
+          {"id":1, "label":"came home / had visited"},
+          {"id":2, "label":"came home / has visited"},
+          {"id":3, "label":"had come / visited"},
+          {"id":4, "label":"had came / had visited"}]
       },
       "correct": 4
     },
     {
       "id": 5,
+      "type": "chooseReplace",
       "question": {
         "label": "... sugar on the table?",
         "answers": [
