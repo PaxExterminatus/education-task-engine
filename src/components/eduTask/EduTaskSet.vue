@@ -4,7 +4,6 @@
   edu-task(:task="tasks[index]")
   .actions
     button.action Дальше
-  div {{tasks}}
 </template>
 
 <script>
