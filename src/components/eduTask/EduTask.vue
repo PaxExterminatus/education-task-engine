@@ -1,9 +1,10 @@
 <template lang="pug">
-  div {{task.question.label}}
+  .edu-task
+    div.question {{task.question.label}}
     template(v-for="answer of task.question.answers")
-      label
+      label.answer-label
         input.answer-radio(type="radio" :value="answer.id" v-model="answerChange")
-        div.answer-block {{answer.label}}
+        .answer-block {{answer.label}}
 </template>
 
 <script>

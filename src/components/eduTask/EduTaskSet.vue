@@ -2,8 +2,7 @@
 .tasks-set
   .totals {{index + 1}} / {{tasks.length}}
   edu-task(:task="tasks[index]")
-  .actions
-    button.action Дальше
+  button.action Дальше
 </template>
 
 <script>

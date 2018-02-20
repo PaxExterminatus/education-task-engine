@@ -15,30 +15,19 @@ export default {
 </script>
 
 <style lang="sass">
-/*http://colrd.com/palette/19065/*/
+@import url('https://fonts.googleapis.com/css?family=Rubik')
+@import "assets/color"
 $el-width: 350px
 $el-padding: 10px 15px
-=el-action
+=btn
   cursor: pointer
   border-radius: 10px
   max-width: $el-width
   padding: $el-padding
-
-$clr1: #ffffe5
-$clr2: #f7fcb9
-$clr3: #d9f0a3
-$clr4: #addd8e
-$clr5: #78c679
-$clr6: #41ab5d
-$clr7: #238443
-$clr8: #006837
-$clr9: #004529
-$clrf1: #2c3e50
-$clrf2: #fff
-
+  margin: 1vh
 .edu-tasks-app
-  color: $clrf1
-  font: 100% Gill Sans, Tahoma
+  color: $color-font-dark
+  font-family: 'Rubik', sans-serif
   height: 94vh
   max-height: 480px
   .tasks-set
@@ -46,27 +35,38 @@ $clrf2: #fff
     flex-direction: column
     justify-content: space-around
     height: 100%
+    .edu-task
+      flex: 1 0 auto
+      display: flex
+      flex-direction: column
     .totals
       text-align: center
+    .question
+      font-size: 1.3rem
+    .answer-label
+      max-width: $el-width
     .answer-radio
       display: none
     .answer-block
-      +el-action
-      background-color: $clr1
-      margin: 5px 0
+      +btn
+      background-color: $color-theme1
     .answer-block:hover
-      background-color: $clr2
+      background-color: $color-theme2
     .answer-radio:checked + .answer-block
-      background-color: $clr3
-    .actions
-      display: flex
-      justify-content: center
+      background-color: $color-theme3
     .action
+      flex: 0 0 auto
+      +btn
       border: none
-      +el-action
-      width: 100%
-      background-color: $clr8
-      color: $clrf2
+      font: inherit
+      text-align: center
+      color: $color-font-light
+      background-color: $color-theme8
     .action:hover
-      background-color: $clr7
+      background-color: $color-theme7
+@media (max-width: 400px)
+  .edu-tasks-app
+    .tasks-set
+      .question
+        font-size: 6vw
 </style>
