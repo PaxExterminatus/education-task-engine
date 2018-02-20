@@ -1,9 +1,9 @@
 <template lang="pug">
-.tasks
-  .totals
-    .count Задание {{index + 1}} из {{tasks.length}}
+.edu-app-set
+  .edu-app-set-totals
+    .edu-app-set-count Задание {{index + 1}} из {{tasks.length}}
   edu-task(:task="tasks[index]")
-  button.action Дальше
+  button.edu-app-action Дальше
 </template>
 
 <script>
