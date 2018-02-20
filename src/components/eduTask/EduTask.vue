@@ -1,14 +1,17 @@
 <template lang="pug">
   .edu-task
-    div.question {{task.question.label}}
-    template(v-for="answer of task.question.answers")
-      label.answer-label
-        input.answer-radio(type="radio" :value="answer.id" v-model="answerChange")
-        .answer-block {{answer.label}}
+    .todo {{task.todo}}
+    componet(v-if="taskComponent" v-bind:is="taskComponent" v-bind:question="task.question")
 </template>
 
 <script>
+import QChoose from './QChoose'
+import QSequence from './QSequence'
 export default {
+  components: {
+    QChoose,
+    QSequence
+  },
   name: 'edu-task',
   props: {
     task: {
@@ -17,6 +20,7 @@ export default {
         return {
           id: 0,
           type: '',
+          todo: '',
           question: {label: '', answers: [{id: 0, label: ''}]}
         }
       }}
@@ -24,6 +28,15 @@ export default {
   data () {
     return {
       answerChange: null
+    }
+  },
+  computed: {
+    taskComponent: function () {
+      try {
+        return (this.task.type === '') ? null : 'q-' + this.task.type
+      } catch (e) {
+        return null
+      }
     }
   }
 }

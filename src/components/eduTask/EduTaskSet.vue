@@ -1,6 +1,7 @@
 <template lang="pug">
-.tasks-set
-  .totals {{index + 1}} / {{tasks.length}}
+.tasks
+  .totals
+    .count Задание {{index + 1}} из {{tasks.length}}
   edu-task(:task="tasks[index]")
   button.action Дальше
 </template>
@@ -8,8 +9,11 @@
 <script>
 import http from 'axios'
 import EduTask from './EduTask'
+
 export default {
-  components: {EduTask},
+  components: {
+    EduTask
+  },
   name: 'edu-task-set',
   data () {
     return {

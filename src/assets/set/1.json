@@ -2,7 +2,8 @@
   "tasks": [
     {
       "id": 1,
-      "type": "chooseReplace",
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
       "question": {
         "label": "This beautiful building ... three hundred years ago.",
         "answers": [
@@ -15,7 +16,8 @@
     },
     {
       "id": 2,
-      "type": "chooseReplace",
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
       "question": {
         "label": "John said that he ... this place before.",
         "answers": [
@@ -28,7 +30,8 @@
     },
     {
       "id": 3,
-      "type": "chooseReplace",
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
       "question": {
         "label": "Do you really think they are ... to buy this expensive car?",
         "answers": [
@@ -41,7 +44,8 @@
     },
     {
       "id": 4,
-      "type": "chooseReplace",
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
       "question": {
         "label": "Before she ... she ... her father.",
         "answers": [
@@ -54,7 +58,8 @@
     },
     {
       "id": 5,
-      "type": "chooseReplace",
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
       "question": {
         "label": "... sugar on the table?",
         "answers": [
