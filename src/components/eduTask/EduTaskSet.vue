@@ -1,10 +1,9 @@
 <template lang="pug">
 .edu-app-set
   .edu-app-set-result(v-if="resultShow")
-    edu-task-result
+    edu-task-result(v-bind:tasks="tasks")
   .edu-app-set-totals(v-else)
     .edu-app-set-count Задание {{index + 1}} из {{tasks.length}}
-    div resultShow = {{resultShow}}
   edu-task(v-bind:task="task" v-on:answerChangeEvent="answerChangeEvent")
   button.edu-app-action(v-bind:disabled="answerNotChanged" v-on:click="nextTask") Дальше
 </template>
