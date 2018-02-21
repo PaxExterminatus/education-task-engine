@@ -25,6 +25,11 @@ export default {
     return {
       answerChange: null
     }
+  },
+  watch: {
+    answerChange: function (val) {
+      this.$emit('answerChangeEvent', val)
+    }
   }
 }
 </script>

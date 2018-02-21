@@ -1,7 +1,7 @@
 <template lang="pug">
   .edu-app-task
     .edu-app-task-label {{task.todo}}
-    componet(v-if="taskComponent" v-bind:is="taskComponent" v-bind:question="task.question")
+    componet(v-if="taskComponent" v-bind:is="taskComponent" v-bind:question="task.question" v-on:answerChangeEvent="answerChangeEvent")
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
           id: 0,
           type: '',
           todo: '',
-          question: {label: '', answers: [{id: 0, label: ''}]}
+          question: {label: '', answers: [ {id: 0, label: ''} ]}
         }
       }}
   },
@@ -37,6 +37,11 @@ export default {
       } catch (e) {
         return null
       }
+    }
+  },
+  methods: {
+    answerChangeEvent: function (val) {
+      this.$emit('answerChangeEvent', val)
     }
   }
 }

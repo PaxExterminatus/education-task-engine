@@ -50,6 +50,9 @@ $appName: 'edu-app'
     background-color: $color-theme8
   .#{$appName}-action:hover
     background-color: $color-theme7
+  .#{$appName}-action:disabled
+    background-color: $color-disabled
+    cursor: not-allowed
   //App.TaskSet.Task
   .#{$appName}-task
     flex: 1 0 auto
