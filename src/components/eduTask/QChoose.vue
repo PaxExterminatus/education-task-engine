@@ -29,6 +29,9 @@ export default {
   watch: {
     answerChange: function (val) {
       this.$emit('answerChangeEvent', val)
+    },
+    question: function () {
+      this.answerChange = null
     }
   }
 }
