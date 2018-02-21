@@ -15,63 +15,68 @@ export default {
 </script>
 
 <style lang="sass">
-@import "assets/colors"
+$appName: 'edu-app'
+
+@import 'assets/colors'
 @import "assets/presets"
 @import "assets/fonts"
-//component App
-.edu-app
+//component App [1]
+.#{$appName}
   color: $color-font-dark
   font-family: 'Rubik', sans-serif
   height: 94vh
   max-height: 480px
-  //component TaskSet
-  .edu-app-set
+  //App.TaskSet
+  .#{$appName}-set
     display: flex
     flex-direction: column
     justify-content: space-around
     height: 100%
-    .edu-app-set-totals
-      font-size: $font-size-small
-      display: flex
-      .edu-app-set-count
-        color: initial
-    .edu-app-action
-      +action
-      flex: 0 0 auto
-      font: inherit
-      text-align: center
-      color: $color-font-light
-      background-color: $color-theme8
-    .edu-app-action:hover
-      background-color: $color-theme7
-    .edu-app-totals > *
-      margin-right: 10px
-    .edu-task
-      flex: 1 0 auto
-      display: flex
-      flex-direction: column
-    .todo
-      font-size: $font-size-small
-    .question
-      margin-top: 2vh
-      .question-label
-        font-size: $font-size-big
-      .answer-label
-        display: block
-        max-width: $action-max-width
-      .answer-radio
-        display: none
-      .answer-block
-        +action
-        background-color: $color-theme1
-      .answer-block:hover
-        background-color: $color-theme2
-      .answer-radio:checked + .answer-block
-        background-color: $color-theme3
+  //App.TaskSet.Totals
+  .#{$appName}-set-totals
+    font-size: $font-size-small
+    display: flex
+  .#{$appName}-set-count
+    color: initial
+  .#{$appName}-set-totals > *
+    margin-right: 10px
+  //App.TaskSet.Action
+  .#{$appName}-action
+    +action
+    flex: 0 0 auto
+    font: inherit
+    text-align: center
+    color: $color-font-light
+    background-color: $color-theme8
+  .#{$appName}-action:hover
+    background-color: $color-theme7
+  //App.TaskSet.Task
+  .#{$appName}-task
+    flex: 1 0 auto
+    display: flex
+    flex-direction: column
+  .#{$appName}-task-label
+    font-size: $font-size-small
+  //App.TaskSet.Task.Question
+  .#{$appName}-quest
+    margin-top: 2vh
+  .#{$appName}-quest-label
+    font-size: $font-size-big
+  //App.TaskSet.Task.Question.Answer
+  .#{$appName}-answer-label
+    display: block
+    max-width: $action-max-width
+  .#{$appName}-answer-radio
+    display: none
+  .#{$appName}-answer-block
+    +action
+    background-color: $color-theme1
+  .#{$appName}-answer-block:hover
+    background-color: $color-theme2
+  .#{$appName}-answer-radio:checked + .#{$appName}-answer-block
+    background-color: $color-theme3
 @media (max-width: 400px)
-  .edu-app
-    .tasks
-      .question
-        .question-label
-          font-size: 6vw
+  .#{$appName}
+    .#{$appName}-quest-label
+      font-size: 6vw
 </style>
