@@ -20,7 +20,7 @@ $appName: 'edu-app'
 @import 'assets/colors'
 @import "assets/presets"
 @import "assets/fonts"
-//component App [1]
+//component App
 .#{$appName}
   color: $color-font-dark
   font-family: 'Rubik', sans-serif
