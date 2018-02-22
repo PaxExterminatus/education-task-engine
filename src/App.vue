@@ -30,7 +30,6 @@ $appName: 'edu-app'
   .#{$appName}-set
     display: flex
     flex-direction: column
-    justify-content: space-around
     height: 100%
   //App.TaskSet.Totals
   .#{$appName}-set-totals

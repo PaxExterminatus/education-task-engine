@@ -1,11 +1,12 @@
 <template lang="pug">
 .edu-app-set
-  .edu-app-set-result(v-if="resultShow")
+  .edu-app-result(v-if="resultShow")
     edu-task-result(v-bind:tasks="tasks")
-  .edu-app-set-totals(v-else)
-    .edu-app-set-count Задание {{index + 1}} из {{tasks.length}}
-  edu-task(v-bind:task="task" v-on:answerChangeEvent="answerChangeEvent")
-  button.edu-app-action(v-bind:disabled="answerNotChanged" v-on:click="nextTask") Дальше
+  .edu-app-task(v-else)
+    .edu-app-set-totals
+      .edu-app-set-count Задание {{index + 1}} из {{tasks.length}}
+    edu-task(v-bind:task="task" v-on:answerChangeEvent="answerChangeEvent")
+    button.edu-app-action(v-bind:disabled="answerNotChanged" v-on:click="nextTask") Дальше
 </template>
 
 <script>

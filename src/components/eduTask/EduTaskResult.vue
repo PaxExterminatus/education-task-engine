@@ -11,7 +11,7 @@
         .edu-app-detail-task
           .edu-app-detail-index {{index + 1}}
           .edu-app-detail-question {{task.question.label}}
-          .edu-app-detail-correct {{(task.correct === task.change)  }}
+          .edu-app-detail-correct {{  }}
 </template>
 
 <script>
@@ -25,12 +25,7 @@ export default {
             id: 0,
             type: '',
             todo: '',
-            question: {
-              label: '',
-              answers: [
-                {id: 0, label: ''}
-              ]
-            },
+            question: { label: '', answers: [{id: 0, label: ''}] },
             correct: null,
             change: null
           } ]
@@ -40,6 +35,18 @@ export default {
   data () {
     return {
       correctCount: 0
+    }
+  },
+  watch: {
+    tasks: function () {
+      console.log('watch - run')
+      for (var i = 0; i < this.tasks.length; i++) {
+        console.log('watch - for')
+        if (this.tasks[i].correct === this.tasks[i].change) {
+          console.log('watch - tasks')
+          this.correctCount += 1
+        }
+      }
     }
   }
 }
