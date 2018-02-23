@@ -22,7 +22,12 @@ export default {
     return {
       id: 0,
       index: 0,
-      tasks: []
+      tasks: [{
+        id: 0,
+        type: '',
+        todo: '',
+        question: {label: '', answers: [ {id: 0, label: ''} ]}
+      }]
     }
   },
   created () {

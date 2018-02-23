@@ -21,6 +21,14 @@ $appName: 'edu-app'
 @import "assets/presets"
 @import "assets/fonts"
 //App
+.#{$appName}-extend-action
+  width: 100%
+  cursor: pointer
+  border-radius: 10px
+  padding: $action-padding
+  margin: 1vh 0
+  border: $action-border
+  box-sizing: border-box
 .#{$appName}
   color: $color-font-dark
   font-family: 'Rubik', sans-serif
@@ -35,10 +43,9 @@ $appName: 'edu-app'
     font-size: $font-size-big
   //App.TaskSet.Action
   .#{$appName}-actions
-    background-color: #d9f0a3
     max-width: $action-max-width
   .#{$appName}-action
-    +action
+    @extend .#{$appName}-extend-action
     font: inherit
     text-align: center
     color: $color-font-light
@@ -49,25 +56,19 @@ $appName: 'edu-app'
     background-color: $color-disabled
     cursor: not-allowed
   //App.TaskSet.Task
-  .#{$appName}-task-label
-    font-size: $font-size-small
+  .#{$appName}-task
   //App.TaskSet.Task.Question
-  .#{$appName}-quest
+  .#{$appName}-answers
     margin-top: 2vh
-  .#{$appName}-quest-label
-    font-size: $font-size-big
   //App.TaskSet.Task.Question.Answer
-  .#{$appName}-answer-label
-    display: block
-    max-width: $action-max-width
   .#{$appName}-answer-radio
     display: none
-  .#{$appName}-answer-block
-    +action
+  .#{$appName}-answer-action
+    @extend .#{$appName}-extend-action
     background-color: $color-theme1
   .#{$appName}-answer-block:hover
     background-color: $color-theme2
-  .#{$appName}-answer-radio:checked + .#{$appName}-answer-block
+  .#{$appName}-answer-radio:checked + .#{$appName}-answer-action
     background-color: $color-theme3
   //Result.Totals
   .#{$appName}-result-labels
