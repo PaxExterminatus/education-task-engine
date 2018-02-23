@@ -1,10 +1,10 @@
 <template lang="pug">
 .edu-app-set
-  .edu-app-result(v-if="resultShow")
-    edu-task-result(v-bind:tasks="tasks")
-  .edu-app-task(v-else)
-    .edu-app-set-totals
-      .edu-app-set-count Задание {{index + 1}} из {{tasks.length}}
+  .edu-app-note
+    .edu-app-set-counter Задание {{index + 1}} из {{tasks.length}}
+    .edu-app-task-todo {{task.todo}}
+    .edu-app-task-question {{task.question.label}}
+  .edu-app-actions
     edu-task(v-bind:task="task" v-on:answerChangeEvent="answerChangeEvent")
     button.edu-app-action(v-bind:disabled="answerNotChanged" v-on:click="nextTask") Дальше
 </template>
@@ -12,11 +12,10 @@
 <script>
 import http from 'axios'
 import EduTask from './EduTask'
-import EduTaskResult from './EduTaskResult'
 
 export default {
   components: {
-    EduTask, EduTaskResult
+    EduTask
   },
   name: 'edu-task-set',
   data () {

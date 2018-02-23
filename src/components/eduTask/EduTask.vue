@@ -1,6 +1,5 @@
 <template lang="pug">
   .edu-app-task
-    .edu-app-task-label {{task.todo}}
     componet(v-if="taskComponent" v-bind:is="taskComponent" v-bind:question="task.question" v-on:answerChangeEvent="answerChangeEvent")
 </template>
 

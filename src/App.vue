@@ -20,29 +20,25 @@ $appName: 'edu-app'
 @import 'assets/colors'
 @import "assets/presets"
 @import "assets/fonts"
-//component App
+//App
 .#{$appName}
   color: $color-font-dark
   font-family: 'Rubik', sans-serif
-  height: 94vh
-  max-height: 480px
   //App.TaskSet
   .#{$appName}-set
-    display: flex
-    flex-direction: column
-    height: 100%
-  //App.TaskSet.Totals
-  .#{$appName}-set-totals
+  //App.TaskSet.Note
+  .#{$appName}-note
     font-size: $font-size-small
-    display: flex
-  .#{$appName}-set-count
-    color: initial
-  .#{$appName}-set-totals > *
-    margin-right: 10px
+  .#{$appName}-set-counter
+  .#{$appName}-task-todo
+  .#{$appName}-task-question
+    font-size: $font-size-big
   //App.TaskSet.Action
+  .#{$appName}-actions
+    background-color: #d9f0a3
+    max-width: $action-max-width
   .#{$appName}-action
     +action
-    flex: 0 0 auto
     font: inherit
     text-align: center
     color: $color-font-light
@@ -53,10 +49,6 @@ $appName: 'edu-app'
     background-color: $color-disabled
     cursor: not-allowed
   //App.TaskSet.Task
-  .#{$appName}-task
-    flex: 1 0 auto
-    display: flex
-    flex-direction: column
   .#{$appName}-task-label
     font-size: $font-size-small
   //App.TaskSet.Task.Question
