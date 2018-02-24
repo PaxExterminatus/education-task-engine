@@ -70,25 +70,10 @@ $appName: 'edu-app'
     background-color: $color-theme2
   .#{$appName}-answer-radio:checked + .#{$appName}-answer-action
     background-color: $color-theme3
-  //Result.Totals
-  .#{$appName}-result-labels
-    display: flex
-    text-align: center
-  .#{$appName}-result-labels > *
-    border: solid 1px green
-    width: 100%
-    padding: 5px
-  .#{$appName}-result-values
-    @extend .#{$appName}-result-labels
-  //Result.Detail
-  .#{$appName}-detail-task
-    @extend .#{$appName}-result-labels
-  .edu-app-detail-index
-    width: 5%
-  .edu-app-detail-correct
-    @extend .edu-app-detail-index
-  .edu-app-detail-question
-    text-align: left
+  //App.TaskSet.Result
+  .#{$appName}-result
+    background-color: #d9f0a3
+  .#{$appName}-result-totals
 @media (max-width: 400px)
   .#{$appName}
     .#{$appName}-quest-label

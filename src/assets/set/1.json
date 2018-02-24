@@ -10,9 +10,9 @@
           {"id":1, "label":"is built"},
           {"id":2, "label":"was build"},
           {"id":3, "label":"has been built"},
-          {"id":4, "label":"was built"}],
-        "correct": 1
-      }
+          {"id":4, "label":"was built"}]
+      },
+      "correct": 1
     },
     {
       "id": 2,
