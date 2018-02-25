@@ -20,8 +20,8 @@ $appName: 'edu-app'
 @import 'assets/colors'
 @import "assets/presets"
 @import "assets/fonts"
-//App
-.#{$appName}-extend-action
+//Extend
+%action
   width: 100%
   cursor: pointer
   border-radius: 10px
@@ -29,53 +29,55 @@ $appName: 'edu-app'
   margin: 1vh 0
   border: $action-border
   box-sizing: border-box
+//App
 .#{$appName}
-  color: $color-font-dark
   font-family: 'Rubik', sans-serif
+  color: $color-font-dark
   //App.TaskSet
-  .#{$appName}-set
+  &-set
   //App.TaskSet.Note
-  .#{$appName}-note
-    font-size: $font-size-small
-  .#{$appName}-set-counter
-  .#{$appName}-task-todo
-  .#{$appName}-task-question
+  &-note
+    font:
+      size: $font-size-small
+  &-set-counter
+  &-task-todo
+  &-task-question
     font-size: $font-size-big
   //App.TaskSet.Action
-  .#{$appName}-actions
+  &-actions
     max-width: $action-max-width
-  .#{$appName}-action
-    @extend .#{$appName}-extend-action
+  &-action
+    @extend %action
     font: inherit
     text-align: center
     color: $color-font-light
     background-color: $color-theme8
-  .#{$appName}-action:hover
-    background-color: $color-theme7
-  .#{$appName}-action:disabled
-    background-color: $color-disabled
-    cursor: not-allowed
+    &:hover
+      background-color: $color-theme7
+    &:disabled
+      background-color: $color-disabled
+      cursor: not-allowed
   //App.TaskSet.Task
-  .#{$appName}-task
+  &-task
   //App.TaskSet.Task.Question
-  .#{$appName}-answers
+  &-answers
     margin-top: 2vh
   //App.TaskSet.Task.Question.Answer
-  .#{$appName}-answer-radio
+  &-answer-radio
     display: none
-  .#{$appName}-answer-action
-    @extend .#{$appName}-extend-action
+  &-answer-action
+    @extend %action
     background-color: $color-theme1
-  .#{$appName}-answer-block:hover
+  &-answer-block:hover
     background-color: $color-theme2
-  .#{$appName}-answer-radio:checked + .#{$appName}-answer-action
+  &-answer-radio:checked + .#{$appName}-answer-action
     background-color: $color-theme3
   //App.TaskSet.Result
-  .#{$appName}-result
+  &-result
     background-color: #d9f0a3
-  .#{$appName}-result-totals
+  &-result-totals
 @media (max-width: 400px)
   .#{$appName}
-    .#{$appName}-quest-label
+    &-task-question
       font-size: 6vw
 </style>
