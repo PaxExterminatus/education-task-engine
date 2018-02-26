@@ -24,10 +24,10 @@ $appName: 'edu-app'
 %action
   width: 100%
   cursor: pointer
-  border-radius: 10px
   padding: $action-padding
   margin: 1vh 0
   border: $action-border
+  border-radius: 10px
   box-sizing: border-box
 //App
 .#{$appName}
