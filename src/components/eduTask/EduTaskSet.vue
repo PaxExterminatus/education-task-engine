@@ -82,7 +82,7 @@ export default {
     },
     resultPercent: function () {
       return this.resultCorrect / this.tasks.length * 100
-    },
+    }
   }
 }
 </script>
