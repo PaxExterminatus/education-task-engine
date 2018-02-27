@@ -1,4 +1,9 @@
 {
+  "messages": [
+    {"percent": 0, "message": "bad"},
+    {"percent": 60, "message": "good"},
+    {"percent": 90, "message": "excellent"}
+  ],
   "tasks": [
     {
       "id": 1,

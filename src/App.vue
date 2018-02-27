@@ -74,8 +74,9 @@ $appName: 'edu-app'
     background-color: $color-theme3
   //App.TaskSet.Result
   &-result
-    background-color: #d9f0a3
-  &-result-totals
+    text-align: center
+  &-result-counter
+  &-result-message
 @media (max-width: 400px)
   .#{$appName}
     &-task-question
