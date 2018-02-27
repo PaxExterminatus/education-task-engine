@@ -1,8 +1,8 @@
 {
   "messages": [
-    {"percent": 0, "message": "bad"},
-    {"percent": 60, "message": "good"},
-    {"percent": 90, "message": "excellent"}
+    {"percent": 0, "message": "<b>bad</b>"},
+    {"percent": 60, "message": "<b>good</b>"},
+    {"percent": 90, "message": "<b>excellent</b>"}
   ],
   "tasks": [
     {

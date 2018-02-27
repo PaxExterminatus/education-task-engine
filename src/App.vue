@@ -74,7 +74,6 @@ $appName: 'edu-app'
     background-color: $color-theme3
   //App.TaskSet.Result
   &-result
-    text-align: center
   &-result-counter
   &-result-message
 @media (max-width: 400px)

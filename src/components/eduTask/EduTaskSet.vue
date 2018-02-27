@@ -1,5 +1,5 @@
 <template lang="pug">
-.edu-app-set {{messages}}
+.edu-app-set
   .edu-app-note
     .edu-app-set-counter Задание {{index + 1}} из {{tasks.length}}
     .edu-app-task-todo {{task.todo}}
@@ -10,7 +10,7 @@
     button.edu-app-action(v-if="resultShow" v-on:click="resultCheck") Проверить
   .edu-app-result
     .edu-app-result-counter Правильно {{resultCorrect}} из {{tasks.length}}, {{resultPercent}}%
-    .edu-app-result-message resultMessage = {{resultMessage}}
+    .edu-app-result-message(v-html="resultMessage")
 </template>
 
 <script>
@@ -58,7 +58,7 @@ export default {
       }
       this.resultMessage = ''
       for (i = 0; i < this.messages.length; i++) {
-        if (this.messages[i].percent >= this.resultPercent) {
+        if (this.resultPercent >= this.messages[i].percent) {
           this.resultMessage = this.messages[i].message
         }
       }
