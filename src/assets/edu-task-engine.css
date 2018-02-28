@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+.edu-app-action, .edu-app-answer-action {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 1vh 0;
+  border: 0 solid;
+  border-radius: 10px;
+  box-sizing: border-box; }
+
+.edu-app {
+  font-family: "Rubik", sans-serif;
+  color: #2c3e50; }
+  .edu-app-note {
+    font-size: 0.8rem; }
+  .edu-app-task-question {
+    font-size: 1.5rem; }
+  .edu-app-actions {
+    max-width: 350px; }
+  .edu-app-action {
+    font: inherit;
+    text-align: center;
+    color: #fff;
+    background-color: #006837; }
+    .edu-app-action:hover {
+      background-color: #238443; }
+    .edu-app-action:disabled {
+      background-color: #ccc;
+      cursor: not-allowed; }
+  .edu-app-answers {
+    margin-top: 2vh; }
+  .edu-app-answer-label {
+    font-weight: normal;
+    display: block; }
+  .edu-app-answer-radio {
+    display: none; }
+  .edu-app-answer-action {
+    background-color: #ffffe5; }
+    .edu-app-answer-action:hover {
+      background-color: #f7fcb9; }
+  .edu-app-answer-radio:checked + .edu-app-answer-action {
+    background-color: #d9f0a3; }
+  .edu-app-result-percent {
+    font-size: 3rem;
+    padding: 5px; }
+
+@media (max-width: 400px) {
+  .edu-app-task-question {
+    font-size: 6vw; } }
+
+/*# sourceMappingURL=edu-task-engine.css.map */

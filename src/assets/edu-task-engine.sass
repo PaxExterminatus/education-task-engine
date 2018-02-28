@@ -1,0 +1,71 @@
+$appName: 'edu-app'
+
+@import 'colors'
+@import "presets"
+@import "fonts"
+//Extend
+%action
+  width: 100%
+  cursor: pointer
+  padding: $action-padding
+  margin: 1vh 0
+  border: $action-border
+  border-radius: 10px
+  box-sizing: border-box
+//App
+.#{$appName}
+  font-family: 'Rubik', sans-serif
+  color: $color-font-dark
+  //App.TaskSet
+  &-set
+  //App.TaskSet.Note
+  &-note
+    font:
+      size: $font-size-small
+  &-set-counter
+  &-task-todo
+  &-task-question
+    font-size: $font-size-big
+  //App.TaskSet.Action
+  &-actions
+    max-width: $action-max-width
+  &-action
+    @extend %action
+    font: inherit
+    text-align: center
+    color: $color-font-light
+    background-color: $color-theme8
+    &:hover
+      background-color: $color-theme7
+    &:disabled
+      background-color: $color-disabled
+      cursor: not-allowed
+  //App.TaskSet.Task
+  &-task
+  //App.TaskSet.Task.Question
+  &-answers
+    margin-top: 2vh
+  //App.TaskSet.Task.Question.Answer
+  &-answer-label
+    font-weight: normal
+    display: block
+  &-answer-radio
+    display: none
+  &-answer-action
+    @extend %action
+    background-color: $color-theme1
+    &:hover
+      background-color: $color-theme2
+  &-answer-radio:checked + &-answer-action
+    background-color: $color-theme3
+  //App.TaskSet.Result
+  &-result
+  &-result-percent
+    font-size: $font-size-large
+    padding: 5px
+  &-result-counter
+  &-result-message
+@media (max-width: 400px)
+  .#{$appName}
+    &-task-question
+      font-size: 6vw

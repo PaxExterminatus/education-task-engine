@@ -1,5 +1,6 @@
 <template lang="pug">
 .edu-app-set
+  button.edu-app-action(v-on:click="cook") Cookie
   div(v-if="!showResult")
     .edu-app-note
       .edu-app-set-counter Задание {{index + 1}} из {{tasks.length}}
@@ -19,10 +20,11 @@
 <script>
 import http from 'axios'
 import EduTask from './EduTask'
+import cookies from 'vue-cookie'
 
 export default {
   components: {
-    EduTask
+    EduTask, cookies
   },
   name: 'edu-task-set',
   data () {
@@ -45,8 +47,13 @@ export default {
         this.tasks = response.data['tasks']
         this.messages = response.data['messages']
       })
+    this.index = Number(cookies.get('edu-task-app'))
+    console.log(this.index)
   },
   methods: {
+    cook: function () {
+      console.log('cook')
+    },
     answerChangeEvent: function (val) {
       this.$set(this.task, 'change', val)
     },
@@ -69,6 +76,11 @@ export default {
         }
       }
       this.showResult = true
+    }
+  },
+  watch: {
+    index: function () {
+      console.log('watch - index')
     }
   },
   computed: {
