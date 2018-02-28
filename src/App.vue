@@ -74,6 +74,9 @@ $appName: 'edu-app'
     background-color: $color-theme3
   //App.TaskSet.Result
   &-result
+  &-result-percent
+    font-size: $font-size-large
+    padding: 5px
   &-result-counter
   &-result-message
 @media (max-width: 400px)

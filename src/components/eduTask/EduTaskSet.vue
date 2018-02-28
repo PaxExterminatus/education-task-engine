@@ -1,15 +1,18 @@
 <template lang="pug">
 .edu-app-set
-  .edu-app-note
-    .edu-app-set-counter Задание {{index + 1}} из {{tasks.length}}
-    .edu-app-task-todo {{task.todo}}
-    .edu-app-task-question {{task.question.label}}
-  .edu-app-actions
-    edu-task(v-bind:task="task" v-on:answerChangeEvent="answerChangeEvent")
-    button.edu-app-action(v-if="resultShow" v-bind:disabled="answerNotChanged" v-on:click="nextTask") Дальше
-    button.edu-app-action(v-if="resultShow" v-on:click="resultCheck") Проверить
-  .edu-app-result
-    .edu-app-result-counter Правильно {{resultCorrect}} из {{tasks.length}}, {{resultPercent}}%
+  div(v-if="!showResult")
+    .edu-app-note
+      .edu-app-set-counter Задание {{index + 1}} из {{tasks.length}}
+      .edu-app-task-todo {{task.todo}}
+      .edu-app-task-question {{task.question.label}}
+    .edu-app-actions
+      edu-task(v-bind:task="task" v-on:answerChangeEvent="answerChangeEvent")
+      button.edu-app-action(v-if="!lastTask" v-bind:disabled="answerNotChanged" v-on:click="nextTask") Дальше
+      button.edu-app-action(v-if="lastTask" v-bind:disabled="answerNotChanged" v-on:click="resultCheck") Проверить
+  .edu-app-result(v-if="showResult")
+    .edu-app-result-counter Вы правильно ответили на
+      span.edu-app-result-percent {{resultPercent}}%
+      | вопросов ({{resultCorrect}} из {{tasks.length}})
     .edu-app-result-message(v-html="resultMessage")
 </template>
 
@@ -29,16 +32,17 @@ export default {
       messages: [{percent: 0, message: ''}],
       tasks: [{ id: 0, type: '', todo: '', correct: 0, change: 0, question: {label: '', answers: [ {id: 0, label: ''} ]} }],
       resultCorrect: 0,
-      resultMessage: ''
+      resultMessage: '',
+      showResult: false
     }
   },
-  created () {
-    http.get('http://localhost/set/1.json')
+  beforeCreate () {
+    const setId = document.getElementById('task-set').getAttribute('data-id')
+    http.get('http://localhost/set/' + setId + '.json')
       .then(response => {
         this.tasks = response.data['tasks']
         this.messages = response.data['messages']
       })
-    this.resultCheck()
   },
   methods: {
     answerChangeEvent: function (val) {
@@ -49,7 +53,7 @@ export default {
     },
     resultCheck: function () {
       this.resultCorrect = 0
-      for (var i = 0; i < this.tasks.length; i++) {
+      for (let i = 0; i < this.tasks.length; i++) {
         if (this.tasks[i].change > 0) {
           if (this.tasks[i].correct === this.tasks[i].change) {
             this.resultCorrect += 1
@@ -57,11 +61,12 @@ export default {
         }
       }
       this.resultMessage = ''
-      for (i = 0; i < this.messages.length; i++) {
+      for (let i = 0; i < this.messages.length; i++) {
         if (this.resultPercent >= this.messages[i].percent) {
           this.resultMessage = this.messages[i].message
         }
       }
+      this.showResult = true
     }
   },
   computed: {
@@ -75,8 +80,8 @@ export default {
         return true
       }
     },
-    resultShow: function () {
-      if (this.tasks.length === 5/* this.index + 1 */) {
+    lastTask: function () {
+      if (this.tasks.length === this.index + 1) {
         return true
       } else { return false }
     },
