@@ -38,7 +38,9 @@ export default {
   },
   beforeCreate () {
     const setId = document.getElementById('task-set').getAttribute('data-id')
-    http.get('http://localhost/set/' + setId + '.json')
+    const url = 'http://localhost/set/' + setId + '.json'
+    // 'https://www.eshko.by/source_lib/data/task_set/' + setId + '.json' // deploy test
+    http.get(url)
       .then(response => {
         this.tasks = response.data['tasks']
         this.messages = response.data['messages']
@@ -81,12 +83,10 @@ export default {
       }
     },
     lastTask: function () {
-      if (this.tasks.length === this.index + 1) {
-        return true
-      } else { return false }
+      return this.tasks.length === this.index + 1
     },
     resultPercent: function () {
-      return this.resultCorrect / this.tasks.length * 100
+      return Number((this.resultCorrect / this.tasks.length * 100).toFixed(0))
     }
   }
 }

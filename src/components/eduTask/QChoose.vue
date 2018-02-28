@@ -1,7 +1,7 @@
 <template lang="pug">
 .edu-app-answers
   template(v-for="answer in question.answers")
-    label
+    label.edu-app-answer-label
       input.edu-app-answer-radio(type="radio" v-bind:value="answer.id" v-model="answerChange")
       .edu-app-answer-action {{answer.label}}
 </template>

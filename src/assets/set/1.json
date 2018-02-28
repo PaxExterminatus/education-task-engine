@@ -75,6 +75,356 @@
           {"id":4, "label":"Are there a few"}]
       },
       "correct": 1
+    },
+    {
+      "id": 6,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "I  am  going to England ... English.",
+        "answers": [
+          {"id":1, "label":"to learn"},
+          {"id":2, "label":"for learning"},
+          {"id":3, "label":"for to learn"},
+          {"id":4, "label":"for learn"}]
+      },
+      "correct": 1
+    },
+    {
+      "id": 7,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "My  birthday is ... February 22.",
+        "answers": [
+          {"id":1, "label":"at"},
+          {"id":2, "label":"to"},
+          {"id":3, "label":"on"},
+          {"id":4, "label":"in"}]
+      },
+      "correct": 3
+    },
+    {
+      "id": 8,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "My parents have been married ... twenty years.",
+        "answers": [
+          {"id":1, "label":"for"},
+          {"id":2, "label":"since"},
+          {"id":3, "label":"from"},
+          {"id":4, "label":"out of"}]
+      },
+      "correct": 1
+    },
+    {
+      "id": 9,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "At the moment John ... a newspaper.",
+        "answers": [
+          {"id":1, "label":"reads"},
+          {"id":2, "label":"is reading"},
+          {"id":3, "label":"read"},
+          {"id":4, "label":"is read"}]
+      },
+      "correct": 2
+    },
+    {
+      "id": 10,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "Do you know when ...?",
+        "answers": [
+          {"id":1, "label":"will they come"},
+          {"id":2, "label":"shall they come"},
+          {"id":3, "label":"they will come"},
+          {"id":4, "label":"would they come"}]
+      },
+      "correct": 3
+    },
+    {
+      "id": 11,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "Tom says his house is ... than Greg's.",
+        "answers": [
+          {"id":1, "label":"biger"},
+          {"id":2, "label":"more big"},
+          {"id":3, "label":"bigger"},
+          {"id":4, "label":"more bigger"}]
+      },
+      "correct": 3
+    },
+    {
+      "id": 12,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "Look at these two bicycles. This one is ... and the other one is ... .",
+        "answers": [
+          {"id":1, "label":"my/her"},
+          {"id":2, "label":"mine/her"},
+          {"id":3, "label":"my/hers"},
+          {"id":4, "label":"mine/hers"}]
+      },
+      "correct": 4
+    },
+    {
+      "id": 13,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "Hello, Peter. Have you got ... news for me?",
+        "answers": [
+          {"id":1, "label":"any"},
+          {"id":2, "label":"a few"},
+          {"id":3, "label":"few"},
+          {"id":4, "label":"several"}]
+      },
+      "correct": 1
+    },
+    {
+      "id": 14,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "This is ....",
+        "answers": [
+          {"id":1, "label":"Peter room"},
+          {"id":2, "label":"the room Peter"},
+          {"id":3, "label":"Peter's room"},
+          {"id":4, "label":"room Peter's"}]
+      },
+      "correct": 3
+    },
+    {
+      "id": 15,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "Who ... Jim is a bad boy?",
+        "answers": [
+          {"id":1, "label":"says"},
+          {"id":2, "label":"does say"},
+          {"id":3, "label":"does says"},
+          {"id":4, "label":"say"}]
+      },
+      "correct": 1
+    },
+    {
+      "id": 16,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "When the weather ... good we will go for a walk.",
+        "answers": [
+          {"id":1, "label":"will be"},
+          {"id":2, "label":"is"},
+          {"id":3, "label":"was"},
+          {"id":4, "label":"would be"}]
+      },
+      "correct": 2
+    },
+    {
+      "id": 17,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "I think these boys are too young to wash ....",
+        "answers": [
+          {"id":1, "label":"himself"},
+          {"id":2, "label":"himselves"},
+          {"id":3, "label":"themself"},
+          {"id":4, "label":"themselves"}]
+      },
+      "correct": 4
+    },
+    {
+      "id": 18,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "I must go to the shop and buy ... sugar and ... tomatoes.",
+        "answers": [
+          {"id":1, "label":"a little/a little"},
+          {"id":2, "label":"a little/a few"},
+          {"id":3, "label":"a few/a little"},
+          {"id":4, "label":"a few/a few"}]
+      },
+      "correct": 2
+    },
+    {
+      "id": 19,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "I must tell you that ... too much beer is dangerous.",
+        "answers": [
+          {"id":1, "label":"to drink"},
+          {"id":2, "label":"drink"},
+          {"id":3, "label":"drinking"},
+          {"id":4, "label":"to drinking"}]
+      },
+      "correct": 3
+    },
+    {
+      "id": 20,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "They hope they can ... it easily.",
+        "answers": [
+          {"id":1, "label":"to do"},
+          {"id":2, "label":"doing"},
+          {"id":3, "label":"to doing"},
+          {"id":4, "label":"do"}]
+      },
+      "correct": 4
+    },
+    {
+      "id": 21,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "Yesterday I ... an interesting film.",
+        "answers": [
+          {"id":1, "label":"watch"},
+          {"id":2, "label":"watchd"},
+          {"id":3, "label":"watched"},
+          {"id":4, "label":"watchet"}]
+      },
+      "correct": 3
+    },
+    {
+      "id": 22,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "She says she ... dinner at home.",
+        "answers": [
+          {"id":1, "label":"never eats"},
+          {"id":2, "label":"doesn't never eat"},
+          {"id":3, "label":"never eat"},
+          {"id":4, "label":"don't ever eat"}]
+      },
+      "correct": 1
+    },
+    {
+      "id": 23,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "How many ... do you want to have in this wardrobe?",
+        "answers": [
+          {"id":1, "label":"shelfs"},
+          {"id":2, "label":"shelfes"},
+          {"id":3, "label":"shelvs"},
+          {"id":4, "label":"shelves"}]
+      },
+      "correct": 4
+    },
+    {
+      "id": 24,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "... doctor Smith! Jimmy is sick!",
+        "answers": [
+          {"id":1, "label":"Call"},
+          {"id":2, "label":"You call"},
+          {"id":3, "label":"You do call"},
+          {"id":4, "label":"Call to"}]
+      },
+      "correct": 1
+    },
+    {
+      "id": 25,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "... is the school?-Two miles away.",
+        "answers": [
+          {"id":1, "label":"How much"},
+          {"id":2, "label":"How far"},
+          {"id":3, "label":"How long"},
+          {"id":4, "label":"How big"}]
+      },
+      "correct": 2
+    },
+    {
+      "id": 26,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "I looked everywhere but I could not find ....",
+        "answers": [
+          {"id":1, "label":"him"},
+          {"id":2, "label":"himself"},
+          {"id":3, "label":"he"},
+          {"id":4, "label":"his"}]
+      },
+      "correct": 1
+    },
+    {
+      "id": 27,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "You ... go to the shop. I have already bought everything.",
+        "answers": [
+          {"id":1, "label":"must"},
+          {"id":2, "label":"needn't"},
+          {"id":3, "label":"mustn't"},
+          {"id":4, "label":"have to"}]
+      },
+      "correct": 2
+    },
+    {
+      "id": 28,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "What's the time? It's ....",
+        "answers": [
+          {"id":1, "label":"three quarter"},
+          {"id":2, "label":"a quarter and three"},
+          {"id":3, "label":"three past quarter"},
+          {"id":4, "label":"a quarter past three"}]
+      },
+      "correct": 4
+    },
+    {
+      "id": 29,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "George said that he ... see us in three weeks.",
+        "answers": [
+          {"id":1, "label":"shall"},
+          {"id":2, "label":"would"},
+          {"id":3, "label":"will"},
+          {"id":4, "label":"want's to"}]
+      },
+      "correct": 2
+    },
+    {
+      "id": 30,
+      "type": "choose",
+      "todo": "Вставьте в предложения пропущенные слова",
+      "question": {
+        "label": "They ... so far.",
+        "answers": [
+          {"id":1, "label":"didn't meet"},
+          {"id":2, "label":"haven't met"},
+          {"id":3, "label":"don't meet"},
+          {"id":4, "label":"weren't meet"}]
+      },
+      "correct": 2
     }
   ]
 }

@@ -63,6 +63,9 @@ $appName: 'edu-app'
   &-answers
     margin-top: 2vh
   //App.TaskSet.Task.Question.Answer
+  &-answer-label
+    font-weight: normal
+    display: block
   &-answer-radio
     display: none
   &-answer-action
