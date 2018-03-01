@@ -9,7 +9,7 @@
     {
       "id": 1,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "This beautiful building ... three hundred years ago.",
         "answers": [
@@ -23,7 +23,7 @@
     {
       "id": 2,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "John said that he ... this place before.",
         "answers": [
@@ -37,7 +37,7 @@
     {
       "id": 3,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "Do you really think they are ... to buy this expensive car?",
         "answers": [
@@ -51,7 +51,7 @@
     {
       "id": 4,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "Before she ... she ... her father.",
         "answers": [
@@ -65,7 +65,7 @@
     {
       "id": 5,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "... sugar on the table?",
         "answers": [
@@ -79,7 +79,7 @@
     {
       "id": 6,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "I  am  going to England ... English.",
         "answers": [
@@ -93,7 +93,7 @@
     {
       "id": 7,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "My  birthday is ... February 22.",
         "answers": [
@@ -107,7 +107,7 @@
     {
       "id": 8,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "My parents have been married ... twenty years.",
         "answers": [
@@ -121,7 +121,7 @@
     {
       "id": 9,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "At the moment John ... a newspaper.",
         "answers": [
@@ -135,7 +135,7 @@
     {
       "id": 10,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "Do you know when ...?",
         "answers": [
@@ -149,7 +149,7 @@
     {
       "id": 11,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "Tom says his house is ... than Greg's.",
         "answers": [
@@ -163,7 +163,7 @@
     {
       "id": 12,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "Look at these two bicycles. This one is ... and the other one is ... .",
         "answers": [
@@ -177,7 +177,7 @@
     {
       "id": 13,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "Hello, Peter. Have you got ... news for me?",
         "answers": [
@@ -191,7 +191,7 @@
     {
       "id": 14,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "This is ....",
         "answers": [
@@ -205,7 +205,7 @@
     {
       "id": 15,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "Who ... Jim is a bad boy?",
         "answers": [
@@ -219,7 +219,7 @@
     {
       "id": 16,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "When the weather ... good we will go for a walk.",
         "answers": [
@@ -233,7 +233,7 @@
     {
       "id": 17,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "I think these boys are too young to wash ....",
         "answers": [
@@ -247,7 +247,7 @@
     {
       "id": 18,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "I must go to the shop and buy ... sugar and ... tomatoes.",
         "answers": [
@@ -261,7 +261,7 @@
     {
       "id": 19,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "I must tell you that ... too much beer is dangerous.",
         "answers": [
@@ -275,7 +275,7 @@
     {
       "id": 20,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "They hope they can ... it easily.",
         "answers": [
@@ -289,7 +289,7 @@
     {
       "id": 21,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "Yesterday I ... an interesting film.",
         "answers": [
@@ -303,7 +303,7 @@
     {
       "id": 22,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "She says she ... dinner at home.",
         "answers": [
@@ -317,7 +317,7 @@
     {
       "id": 23,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "How many ... do you want to have in this wardrobe?",
         "answers": [
@@ -331,7 +331,7 @@
     {
       "id": 24,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "... doctor Smith! Jimmy is sick!",
         "answers": [
@@ -345,7 +345,7 @@
     {
       "id": 25,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "... is the school?-Two miles away.",
         "answers": [
@@ -359,7 +359,7 @@
     {
       "id": 26,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "I looked everywhere but I could not find ....",
         "answers": [
@@ -373,7 +373,7 @@
     {
       "id": 27,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "You ... go to the shop. I have already bought everything.",
         "answers": [
@@ -387,7 +387,7 @@
     {
       "id": 28,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "What's the time? It's ....",
         "answers": [
@@ -401,7 +401,7 @@
     {
       "id": 29,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "George said that he ... see us in three weeks.",
         "answers": [
@@ -415,7 +415,7 @@
     {
       "id": 30,
       "type": "choose",
-      "todo": "Вставьте в предложения пропущенные слова",
+      "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
         "label": "They ... so far.",
         "answers": [

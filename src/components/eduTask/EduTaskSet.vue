@@ -1,5 +1,6 @@
 <template lang="pug">
-.edu-app-set {{answers}}
+.edu-app-set
+  button.edu-app-action(v-on:click="coo") Coo
   div(v-if="!showResult")
     .edu-app-note
       .edu-app-set-counter Задание {{index + 1}} из {{tasks.length}}
@@ -14,8 +15,7 @@
       span.edu-app-result-percent {{resultPercent}}%
       | вопросов ({{resultCorrect}} из {{tasks.length}})
     .edu-app-result-message(v-html="resultMessage")
-  template(v-for="task in tasks")
-    div {{task.id}} / {{task.correct}} / {{task.change}}
+  div {{changes}}
 </template>
 
 <script>
@@ -34,43 +34,51 @@ export default {
       index: 0,
       messages: [{percent: 0, message: ''}],
       tasks: [{ id: 0, type: '', todo: '', correct: 0, change: 0, question: {label: '', answers: [ {id: 0, label: ''} ]} }],
-      answers: [{id: 0, value: 0}],
+      changes: {
+        answers: [0]
+      },
       resultCorrect: 0,
       resultMessage: '',
-      showResult: false
+      showResult: false,
+      answerNotChanged: true
     }
   },
   beforeCreate () {
-    const setId = document.getElementById('task-set').getAttribute('data-id')
-    const url = 'http://localhost/set/' + setId + '.json'
+    this.id = document.getElementById('task-set').getAttribute('data-id')
+    const url = 'http://localhost/set/' + this.id + '.json'
     // 'https://www.eshko.by/source_lib/data/task_set/' + setId + '.json' // deploy test
     http.get(url)
       .then(response => {
-        this.tasks = response.data['tasks']
         this.messages = response.data['messages']
+        this.tasks = response.data['tasks']
       })
   },
   watch: {
-    answers: function () {
-      console.log('watch - answers')
+    index: function (val) {
+      cookies.set('edu-tasks-' + this.id + '-index', val)
+      cookies.set('edu-tasks-' + this.id + '-changes', JSON.stringify(this.changes))
     }
   },
   methods: {
+    coo: function () {
+      this.index = Number(cookies.get('edu-tasks-' + this.id + '-index'))
+      this.changes = cookies.get('edu-tasks-' + this.id + '-changes')
+    },
     answerChangeEvent: function (val) {
       if (val) {
-        this.answers[this.index].id = this.task.id
-        this.answers[this.index].value = val
-        // this.answers[this.index] = {id: this.task.id, value: val}
+        this.changes.answers[this.index] = val
+        this.answerNotChanged = false
       }
     },
     nextTask: function () {
       this.index += 1
+      this.answerNotChanged = true
     },
     resultCheck: function () {
       this.resultCorrect = 0
       for (let i = 0; i < this.tasks.length; i++) {
-        if (this.tasks[i].change > 0) {
-          if (this.tasks[i].correct === this.tasks[i].change) {
+        if (this.changes.answers[i] > 0) {
+          if (this.tasks[i].correct === this.changes.answers[i]) {
             this.resultCorrect += 1
           }
         }
@@ -87,9 +95,6 @@ export default {
   computed: {
     task: function () {
       return this.tasks[this.index]
-    },
-    answerNotChanged: function () {
-      return this.answers[this.index].value === 0
     },
     lastTask: function () {
       return this.tasks.length === this.index + 1
