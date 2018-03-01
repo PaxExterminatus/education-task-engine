@@ -62,7 +62,7 @@ export default {
   methods: {
     coo: function () {
       this.index = Number(cookies.get('edu-tasks-' + this.id + '-index'))
-      this.changes = cookies.get('edu-tasks-' + this.id + '-changes')
+      this.changes = JSON.parse(cookies.get('edu-tasks-' + this.id + '-changes'))
     },
     answerChangeEvent: function (val) {
       if (val) {
