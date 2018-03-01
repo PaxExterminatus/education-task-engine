@@ -1,6 +1,5 @@
 <template lang="pug">
-.edu-app-set
-  button.edu-app-action(v-on:click="cook") Cookie
+.edu-app-set {{answers}}
   div(v-if="!showResult")
     .edu-app-note
       .edu-app-set-counter Задание {{index + 1}} из {{tasks.length}}
@@ -15,6 +14,8 @@
       span.edu-app-result-percent {{resultPercent}}%
       | вопросов ({{resultCorrect}} из {{tasks.length}})
     .edu-app-result-message(v-html="resultMessage")
+  template(v-for="task in tasks")
+    div {{task.id}} / {{task.correct}} / {{task.change}}
 </template>
 
 <script>
@@ -33,6 +34,7 @@ export default {
       index: 0,
       messages: [{percent: 0, message: ''}],
       tasks: [{ id: 0, type: '', todo: '', correct: 0, change: 0, question: {label: '', answers: [ {id: 0, label: ''} ]} }],
+      answers: [{id: 0, value: 0}],
       resultCorrect: 0,
       resultMessage: '',
       showResult: false
@@ -47,15 +49,19 @@ export default {
         this.tasks = response.data['tasks']
         this.messages = response.data['messages']
       })
-    this.index = Number(cookies.get('edu-task-app'))
-    console.log(this.index)
+  },
+  watch: {
+    answers: function () {
+      console.log('watch - answers')
+    }
   },
   methods: {
-    cook: function () {
-      console.log('cook')
-    },
     answerChangeEvent: function (val) {
-      this.$set(this.task, 'change', val)
+      if (val) {
+        this.answers[this.index].id = this.task.id
+        this.answers[this.index].value = val
+        // this.answers[this.index] = {id: this.task.id, value: val}
+      }
     },
     nextTask: function () {
       this.index += 1
@@ -78,21 +84,12 @@ export default {
       this.showResult = true
     }
   },
-  watch: {
-    index: function () {
-      console.log('watch - index')
-    }
-  },
   computed: {
     task: function () {
       return this.tasks[this.index]
     },
     answerNotChanged: function () {
-      try {
-        return this.task.change == null
-      } catch (e) {
-        return true
-      }
+      return this.answers[this.index].value === 0
     },
     lastTask: function () {
       return this.tasks.length === this.index + 1
