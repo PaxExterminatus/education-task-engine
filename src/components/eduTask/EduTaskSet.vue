@@ -51,8 +51,8 @@ export default {
   },
   beforeCreate () {
     this.id = document.getElementById('task-set').getAttribute('data-id')
-    const url = 'http://localhost/set/' + this.id + '.json'
-    // 'https://www.eshko.by/source_lib/data/task_set/' + setId + '.json' // deploy test
+    const url = 'http://localhost/set/' + this.id + '.json' // dev
+    // 'https://www.eshko.by/source_lib/data/task_set/' + this.id + '.json' // product
     http.get(url)
       .then(response => {
         this.id = response.data['id']
