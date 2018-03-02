@@ -9,8 +9,7 @@
       edu-task(v-bind:task="task" v-on:answerChangeEvent="answerChangeEvent")
       button.edu-app-action(v-if="actionShowNext" v-bind:disabled="answerNotChanged" v-on:click="nextTask") Дальше
       button.edu-app-action(v-if="actionShowCheck" v-bind:disabled="answerNotChanged" v-on:click="resultCheck") Проверить
-  div.edu-app-resume(v-if="actionsShowResume") В последний раз вы не закончили все задания.
-    |  Продолжите с {{cookieIndex + 1}} задания или начните c начала
+  div.edu-app-resume(v-if="actionsShowResume") В последний раз вы не закончили все задания. Продолжите выполнение с {{cookieIndex + 1}} задания или начните c начала
     button.edu-app-action(v-on:click="tasksResume") Продолжить
     button.edu-app-action(v-on:click="tasksStart") С начала
   .edu-app-result(v-if="showResult")
@@ -73,9 +72,10 @@ export default {
       this.actionsResumeChange = true
     },
     tasksStart: function () {
-      this.index = 0
       cookies.delete('edu-tasks-' + this.id + '-index')
       cookies.delete('edu-tasks-' + this.id + '-changes')
+      cookies.delete('edu-tasks-' + this.id + '-result')
+      this.index = 0
       this.showResult = false
       this.actionsResumeChange = true
     },
@@ -91,6 +91,7 @@ export default {
     },
     resultCheck: function () {
       this.resultCorrect = 0
+      cookies.set('edu-tasks-' + this.id + '-changes', JSON.stringify(this.changes))
       for (let i = 0; i < this.tasks.length; i++) {
         if (this.changes.answers[i] > 0) {
           if (this.tasks[i].correct === this.changes.answers[i]) {
@@ -105,6 +106,7 @@ export default {
         }
       }
       this.showResult = true
+      cookies.set('edu-tasks-' + this.id + '-result', true)
     }
   },
   computed: {
@@ -130,6 +132,18 @@ export default {
      */
     cookieChanges: function () {
       return JSON.parse(cookies.get('edu-tasks-' + this.id + '-changes'))
+    },
+    cookieResult: function () {
+      return cookies.get('edu-tasks-' + this.id + '-result') === 'true'
+    },
+    resultShow: function () {
+      if (this.cookieResult) {
+        this.tasksResume()
+        this.resultCheck()
+        return true
+      }
+      if (this.showResult) return true
+      return false
     },
     actionShowNext: function () {
       return !this.lastTask

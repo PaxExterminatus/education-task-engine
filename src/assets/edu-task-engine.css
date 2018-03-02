@@ -14,6 +14,7 @@
   .edu-app-note {
     font-size: 1rem; }
   .edu-app-task-question {
+    margin-top: 10px;
     font-size: 1.5rem; }
   .edu-app-actions, .edu-app-resume {
     max-width: 350px; }
