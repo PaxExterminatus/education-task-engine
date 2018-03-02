@@ -1,21 +1,23 @@
 <template lang="pug">
 .edu-app-set
-  button.edu-app-action(v-on:click="coo") Coo
-  div(v-if="!showResult")
+  div(v-if="taskShow")
     .edu-app-note
       .edu-app-set-counter Задание {{index + 1}} из {{tasks.length}}
       .edu-app-task-todo {{task.todo}}
       .edu-app-task-question {{task.question.label}}
     .edu-app-actions
       edu-task(v-bind:task="task" v-on:answerChangeEvent="answerChangeEvent")
-      button.edu-app-action(v-if="!lastTask" v-bind:disabled="answerNotChanged" v-on:click="nextTask") Дальше
-      button.edu-app-action(v-if="lastTask" v-bind:disabled="answerNotChanged" v-on:click="resultCheck") Проверить
+      button.edu-app-action(v-if="actionShowNext" v-bind:disabled="answerNotChanged" v-on:click="nextTask") Дальше
+      button.edu-app-action(v-if="actionShowCheck" v-bind:disabled="answerNotChanged" v-on:click="resultCheck") Проверить
+  div.edu-app-resume(v-if="actionsShowResume") В последний раз вы не закончили все задания.
+    |  Продолжите с {{cookieIndex + 1}} задания или начните c начала
+    button.edu-app-action(v-on:click="tasksResume") Продолжить
+    button.edu-app-action(v-on:click="tasksStart") С начала
   .edu-app-result(v-if="showResult")
     .edu-app-result-counter Вы правильно ответили на
       span.edu-app-result-percent {{resultPercent}}%
       | вопросов ({{resultCorrect}} из {{tasks.length}})
     .edu-app-result-message(v-html="resultMessage")
-  div {{changes}}
 </template>
 
 <script>
@@ -40,7 +42,8 @@ export default {
       resultCorrect: 0,
       resultMessage: '',
       showResult: false,
-      answerNotChanged: true
+      answerNotChanged: true,
+      actionsResumeChange: false
     }
   },
   beforeCreate () {
@@ -49,6 +52,7 @@ export default {
     // 'https://www.eshko.by/source_lib/data/task_set/' + setId + '.json' // deploy test
     http.get(url)
       .then(response => {
+        this.id = response.data['id']
         this.messages = response.data['messages']
         this.tasks = response.data['tasks']
       })
@@ -60,9 +64,16 @@ export default {
     }
   },
   methods: {
-    coo: function () {
-      this.index = Number(cookies.get('edu-tasks-' + this.id + '-index'))
-      this.changes = JSON.parse(cookies.get('edu-tasks-' + this.id + '-changes'))
+    tasksResume: function () {
+      this.index = this.cookieIndex
+      this.changes = this.cookieChanges
+      this.actionsResumeChange = true
+    },
+    tasksStart: function () {
+      this.index = 0
+      cookies.delete('edu-tasks-' + this.id + '-index')
+      cookies.delete('edu-tasks-' + this.id + '-changes')
+      this.actionsResumeChange = true
     },
     answerChangeEvent: function (val) {
       if (val) {
@@ -101,6 +112,38 @@ export default {
     },
     resultPercent: function () {
       return Number((this.resultCorrect / this.tasks.length * 100).toFixed(0))
+    },
+    /**
+     * Last task index in cookies
+     * @returns {number}
+     */
+    cookieIndex: function () {
+      return Number(cookies.get('edu-tasks-' + this.id + '-index'))
+    },
+    /**
+     * Task Set changes in cookies
+     * @returns {string}
+     */
+    cookieChanges: function () {
+      return JSON.parse(cookies.get('edu-tasks-' + this.id + '-changes'))
+    },
+    actionShowNext: function () {
+      return !this.lastTask
+    },
+    actionShowCheck: function () {
+      return this.lastTask
+    },
+    actionsShowResume: function () {
+      return (this.cookieIndex > 0 && !this.actionsResumeChange)
+    },
+    taskShow: function () {
+      if (this.actionsShowResume) {
+        return false
+      } else if (this.showResult) {
+        return false
+      } else {
+        return true
+      }
     }
   }
 }
