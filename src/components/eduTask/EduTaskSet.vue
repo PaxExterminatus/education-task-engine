@@ -58,11 +58,15 @@ export default {
         this.messages = response.data['messages']
         this.tasks = response.data['tasks']
       })
+    console.log(this.showResult)
   },
   watch: {
     index: function (val) {
       cookies.set('edu-tasks-' + this.id + '-index', val)
       cookies.set('edu-tasks-' + this.id + '-changes', JSON.stringify(this.changes))
+    },
+    showResult: function (val) {
+      cookies.set('edu-tasks-' + this.id + '-result', val)
     }
   },
   methods: {
