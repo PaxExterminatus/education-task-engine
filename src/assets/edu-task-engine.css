@@ -43,6 +43,10 @@
   .edu-app-result-percent {
     font-size: 3rem;
     padding: 5px; }
+  .edu-app-result-counter {
+    padding: 5px 0; }
+  .edu-app-result-message {
+    line-height: 1.3rem; }
 
 @media (max-width: 400px) {
   .edu-app-task-question {

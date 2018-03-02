@@ -16,8 +16,11 @@
   .edu-app-result(v-if="showResult")
     .edu-app-result-counter Вы правильно ответили на
       span.edu-app-result-percent {{resultPercent}}%
-      | вопросов ({{resultCorrect}} из {{tasks.length}})
+      | вопросов
+      div ({{resultCorrect}} из {{tasks.length}})
     .edu-app-result-message(v-html="resultMessage")
+    div.edu-app-resume
+      button.edu-app-action(v-on:click="tasksStart") Еще раз
 </template>
 
 <script>
@@ -73,6 +76,7 @@ export default {
       this.index = 0
       cookies.delete('edu-tasks-' + this.id + '-index')
       cookies.delete('edu-tasks-' + this.id + '-changes')
+      this.showResult = false
       this.actionsResumeChange = true
     },
     answerChangeEvent: function (val) {
