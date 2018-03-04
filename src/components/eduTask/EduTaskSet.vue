@@ -1,5 +1,5 @@
 <template lang="pug">
-  .edu-app-set {{changes}}
+  .edu-app-set
     .edu-app-task(v-if="taskShown")
       .edu-app-task-counter Задание {{index + 1}} из {{tasks.length}}
       .edu-app-task-todo {{task.todo}}
@@ -152,6 +152,7 @@ export default {
       this.answerChanged = false
     },
     resultCheck: function () {
+      this.index += 1
       this.resultCorrect = 0
       for (let i = 0; i < this.tasks.length; i++) {
         if (this.changes.answers[i] > 0) {
