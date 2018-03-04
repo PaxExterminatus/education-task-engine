@@ -11,7 +11,9 @@
 .edu-app {
   font-family: "Rubik", sans-serif;
   color: #2c3e50; }
-  .edu-app-note {
+  .edu-app-task-counter {
+    font-size: 1rem; }
+  .edu-app-task-todo {
     font-size: 1rem; }
   .edu-app-task-question {
     margin-top: 10px;
