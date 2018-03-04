@@ -1,6 +1,6 @@
 {
-  "id": 1,
-  "label" : "Контрольный тест Английский для среднего уровня",
+  "id": 2,
+  "label" : "Контрольный тест Английский для высшего уровня",
   "messages": [
     {"percent": 0,  "message": "Вероятно, Вы уже изучали английский язык, но это было давно, в течение непродолжительного времени и несистематически. Вам необходимо освежить свои знания. Для этого лучше начать учебу с курса <b>Английский для начинающих</b>."},
     {"percent": 26, "message": "Результат теста свидетельствует о наличии у Вас определенных, однако еще очень неполных, знаний. Мы советуем Вам начать обучение на курсе <b>Английский для начинающих</b> в ускоренном темпе. Если же Вы решите выбрать курс <b>Английский для среднего уровня</b>, то следует помнить, что для его успешного окончания Вам следует приложить больше усилий. В любом случае, хорошим помощником для Вас будет <b>Грамматический справочник</b> курса <b>Английский для начинающих</b>. Он содержит весь грамматический материал данного курса, а также предложения, иллюстрирующие его применение. Кроме того, Вы можете совершить покупку всех учебных материалов курса <b>Английский для начинающих</b> сразу, что позволит Вам изучать язык в сугубо индивидуальном темпе (при этом Вы оплачиваете стоимость материалов курса со скидкой 25% и бесплатно получаете красочную суперобложку для учебных журналов и футляр для CD)."},
@@ -13,68 +13,68 @@
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "This beautiful building ... three hundred years ago.",
+        "label": "We have already sold two ... ",
         "answers": [
-          {"id":1, "label":"is built"},
-          {"id":2, "label":"was build"},
-          {"id":3, "label":"has been built"},
-          {"id":4, "label":"was built"}]
+          {"id":1, "label":"furnitures"},
+          {"id":2, "label":"furniture"},
+          {"id":3, "label":"pieces of furniture"},
+          {"id":4, "label":"pieces of furnitures"}]
       },
-      "correct": 4
+      "correct": 2
     },
     {
       "id": 2,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "John said that he ... this place before.",
+        "label": "You will receive ... information next week.",
         "answers": [
-          {"id":1, "label":"has never seen"},
-          {"id":2, "label":"never saw"},
-          {"id":3, "label":"had never seen"},
-          {"id":4, "label":"hasn't never seen"}]
+          {"id":1, "label":"father"},
+          {"id":2, "label":"further"},
+          {"id":3, "label":"farer"},
+          {"id":4, "label":"farrer"}]
       },
-      "correct": 3
+      "correct": 2
     },
     {
       "id": 3,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "Do you really think they are ... to buy this expensive car?",
+        "label": "You ... Mr. Jones. I have already talked to him about it.",
         "answers": [
-          {"id":1, "label":"enough rich"},
-          {"id":2, "label":"rich enough"},
-          {"id":3, "label":"richer"},
-          {"id":4, "label":"rich"}]
+          {"id":1, "label":"needn't have rung"},
+          {"id":2, "label":"needn't rung"},
+          {"id":3, "label":"needn't have ring"},
+          {"id":4, "label":"needn't had rung"}]
       },
-      "correct": 2
+      "correct": 1
     },
     {
       "id": 4,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "Before she ... she ... her father.",
+        "label": " I'm not ... for such a long time.",
         "answers": [
-          {"id":1, "label":"came home / had visited"},
-          {"id":2, "label":"came home / has visited"},
-          {"id":3, "label":"had come / visited"},
-          {"id":4, "label":"had came / had visited"}]
+          {"id":1, "label":"used to drive"},
+          {"id":2, "label":"use to driving"},
+          {"id":3, "label":"used to driving"},
+          {"id":4, "label":"used driving"}]
       },
-      "correct": 2
+      "correct": 3
     },
     {
       "id": 5,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "... sugar on the table?",
+        "label": "Have you heard the ... news about the bus accident?",
         "answers": [
-          {"id":1, "label":"Is there any"},
-          {"id":2, "label":"Are there any"},
-          {"id":3, "label":"Is there a few"},
-          {"id":4, "label":"Are there a few"}]
+          {"id":1, "label":"latest"},
+          {"id":2, "label":"last"},
+          {"id":3, "label":"lately"},
+          {"id":4, "label":"most lately"}]
       },
       "correct": 1
     },
@@ -83,54 +83,54 @@
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "I  am  going to England ... English.",
+        "label": " I ... of these two cars.",
         "answers": [
-          {"id":1, "label":"to learn"},
-          {"id":2, "label":"for learning"},
-          {"id":3, "label":"for to learn"},
-          {"id":4, "label":"for learn"}]
+          {"id":1, "label":"don't like none"},
+          {"id":2, "label":"don't like neither"},
+          {"id":3, "label":" like neither"},
+          {"id":4, "label":"like none"}]
       },
-      "correct": 1
+      "correct": 3
     },
     {
       "id": 7,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "My  birthday is ... February 22.",
+        "label": "... you have proposed is quite reasonable.",
         "answers": [
-          {"id":1, "label":"at"},
-          {"id":2, "label":"to"},
-          {"id":3, "label":"on"},
-          {"id":4, "label":"in"}]
+          {"id":1, "label":"What"},
+          {"id":2, "label":"This what"},
+          {"id":3, "label":"That what"},
+          {"id":4, "label":"It what"}]
       },
-      "correct": 3
+      "correct": 1
     },
     {
       "id": 8,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "My parents have been married ... twenty years.",
+        "label": "We didn't know it was ... expensive.",
         "answers": [
-          {"id":1, "label":"for"},
-          {"id":2, "label":"since"},
-          {"id":3, "label":"from"},
-          {"id":4, "label":"out of"}]
+          {"id":1, "label":"such"},
+          {"id":2, "label":"such an"},
+          {"id":3, "label":" that"},
+          {"id":4, "label":"very much"}]
       },
-      "correct": 1
+      "correct": 3
     },
     {
       "id": 9,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "At the moment John ... a newspaper.",
+        "label": "She often has her white coat ...",
         "answers": [
-          {"id":1, "label":"reads"},
-          {"id":2, "label":"is reading"},
-          {"id":3, "label":"read"},
-          {"id":4, "label":"is read"}]
+          {"id":1, "label":"cleaning"},
+          {"id":2, "label":"cleaned"},
+          {"id":3, "label":"to clean"},
+          {"id":4, "label":"to cleaned"}]
       },
       "correct": 2
     },
@@ -139,54 +139,54 @@
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "Do you know when ...?",
+        "label": " Which of the employees ... on Saturday?",
         "answers": [
-          {"id":1, "label":"will they come"},
-          {"id":2, "label":"shall they come"},
-          {"id":3, "label":"they will come"},
-          {"id":4, "label":"would they come"}]
+          {"id":1, "label":"did work"},
+          {"id":2, "label":"do work"},
+          {"id":3, "label":"does work"},
+          {"id":4, "label":"worked"}]
       },
-      "correct": 3
+      "correct": 4
     },
     {
       "id": 11,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "Tom says his house is ... than Greg's.",
+        "label": "Our cat will be ... by our neighbours when we go on holiday.",
         "answers": [
-          {"id":1, "label":"biger"},
-          {"id":2, "label":"more big"},
-          {"id":3, "label":"bigger"},
-          {"id":4, "label":"more bigger"}]
+          {"id":1, "label":"look after"},
+          {"id":2, "label":"looked after"},
+          {"id":3, "label":"looking after"},
+          {"id":4, "label":"looked"}]
       },
-      "correct": 3
+      "correct": 2
     },
     {
       "id": 12,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "Look at these two bicycles. This one is ... and the other one is ... .",
+        "label": " If he ... come today, give him these keys. But I think he'll rather come tomorrow.",
         "answers": [
-          {"id":1, "label":"my/her"},
-          {"id":2, "label":"mine/her"},
-          {"id":3, "label":"my/hers"},
-          {"id":4, "label":"mine/hers"}]
+          {"id":1, "label":"will"},
+          {"id":2, "label":"shall"},
+          {"id":3, "label":"should"},
+          {"id":4, "label":"would"}]
       },
-      "correct": 4
+      "correct": 3
     },
     {
       "id": 13,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "Hello, Peter. Have you got ... news for me?",
+        "label": "You can use my car provided you ... by two o'clock.",
         "answers": [
-          {"id":1, "label":"any"},
-          {"id":2, "label":"a few"},
-          {"id":3, "label":"few"},
-          {"id":4, "label":"several"}]
+          {"id":1, "label":"are back"},
+          {"id":2, "label":"will be back"},
+          {"id":3, "label":"will come back"},
+          {"id":4, "label":"came back"}]
       },
       "correct": 1
     },
@@ -195,124 +195,124 @@
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "This is ....",
+        "label": "He said the information twice so that everybody ... it.",
         "answers": [
-          {"id":1, "label":"Peter room"},
-          {"id":2, "label":"the room Peter"},
-          {"id":3, "label":"Peter's room"},
-          {"id":4, "label":"room Peter's"}]
+          {"id":1, "label":"remembered"},
+          {"id":2, "label":"could remember"},
+          {"id":3, "label":"can remember"},
+          {"id":4, "label":"will remember"}]
       },
-      "correct": 3
+      "correct": 2
     },
     {
       "id": 15,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "Who ... Jim is a bad boy?",
+        "label": "We saw her ... the building.",
         "answers": [
-          {"id":1, "label":"says"},
-          {"id":2, "label":"does say"},
-          {"id":3, "label":"does says"},
-          {"id":4, "label":"say"}]
+          {"id":1, "label":"to enter"},
+          {"id":2, "label":"entered"},
+          {"id":3, "label":"to have entered"},
+          {"id":4, "label":"entering"}]
       },
-      "correct": 1
+      "correct": 4
     },
     {
       "id": 16,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "When the weather ... good we will go for a walk.",
+        "label": "Nobody ... enter this room so far.",
         "answers": [
-          {"id":1, "label":"will be"},
-          {"id":2, "label":"is"},
-          {"id":3, "label":"was"},
-          {"id":4, "label":"would be"}]
+          {"id":1, "label":"was permitted"},
+          {"id":2, "label":"was permit"},
+          {"id":3, "label":"has been permission to"},
+          {"id":4, "label":"has been permitted to"}]
       },
-      "correct": 2
+      "correct": 4
     },
     {
       "id": 17,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "I think these boys are too young to wash ....",
+        "label": "How ... say that.",
         "answers": [
-          {"id":1, "label":"himself"},
-          {"id":2, "label":"himselves"},
-          {"id":3, "label":"themself"},
-          {"id":4, "label":"themselves"}]
+          {"id":1, "label":"do you dare"},
+          {"id":2, "label":"dare you"},
+          {"id":3, "label":"you dare"},
+          {"id":4, "label":"are you daring"}]
       },
-      "correct": 4
+      "correct": 2
     },
     {
       "id": 18,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "I must go to the shop and buy ... sugar and ... tomatoes.",
+        "label": "He would like ... become a doctor.",
         "answers": [
-          {"id":1, "label":"a little/a little"},
-          {"id":2, "label":"a little/a few"},
-          {"id":3, "label":"a few/a little"},
-          {"id":4, "label":"a few/a few"}]
+          {"id":1, "label":"his son to"},
+          {"id":2, "label":"his son"},
+          {"id":3, "label":"that his son"},
+          {"id":4, "label":"that his son will"}]
       },
-      "correct": 2
+      "correct": 1
     },
     {
       "id": 19,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "I must tell you that ... too much beer is dangerous.",
+        "label": "She dreams about ... London.",
         "answers": [
-          {"id":1, "label":"to drink"},
-          {"id":2, "label":"drink"},
-          {"id":3, "label":"drinking"},
-          {"id":4, "label":"to drinking"}]
+          {"id":1, "label":"visit"},
+          {"id":2, "label":"to visit"},
+          {"id":3, "label":"visit to"},
+          {"id":4, "label":"visiting"}]
       },
-      "correct": 3
+      "correct": 4
     },
     {
       "id": 20,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "They hope they can ... it easily.",
+        "label": "Never in my life ... such a thing.",
         "answers": [
-          {"id":1, "label":"to do"},
-          {"id":2, "label":"doing"},
-          {"id":3, "label":"to doing"},
-          {"id":4, "label":"do"}]
+          {"id":1, "label":"have I seen"},
+          {"id":2, "label":"I have seen"},
+          {"id":3, "label":"I saw"},
+          {"id":4, "label":"did I see"}]
       },
-      "correct": 4
+      "correct": 1
     },
     {
       "id": 21,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "Yesterday I ... an interesting film.",
+        "label": "We didn't arrive on time and they didn't ...",
         "answers": [
-          {"id":1, "label":"watch"},
-          {"id":2, "label":"watchd"},
-          {"id":3, "label":"watched"},
-          {"id":4, "label":"watchet"}]
+          {"id":1, "label":"too"},
+          {"id":2, "label":"as well"},
+          {"id":3, "label":"also"},
+          {"id":4, "label":"either"}]
       },
-      "correct": 3
+      "correct": 4
     },
     {
       "id": 22,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "She says she ... dinner at home.",
+        "label": "Neither he ... his wife heard the noise.",
         "answers": [
-          {"id":1, "label":"never eats"},
-          {"id":2, "label":"doesn't never eat"},
-          {"id":3, "label":"never eat"},
-          {"id":4, "label":"don't ever eat"}]
+          {"id":1, "label":"nor"},
+          {"id":2, "label":"or"},
+          {"id":3, "label":"and"},
+          {"id":4, "label":"but"}]
       },
       "correct": 1
     },
@@ -321,110 +321,110 @@
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "How many ... do you want to have in this wardrobe?",
+        "label": "He hasn't bought the tickets. ... we.",
         "answers": [
-          {"id":1, "label":"shelfs"},
-          {"id":2, "label":"shelfes"},
-          {"id":3, "label":"shelvs"},
-          {"id":4, "label":"shelves"}]
+          {"id":1, "label":"So have"},
+          {"id":2, "label":"Either have"},
+          {"id":3, "label":"Neither have"},
+          {"id":4, "label":"Neither have bought"}]
       },
-      "correct": 4
+      "correct": 3
     },
     {
       "id": 24,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "... doctor Smith! Jimmy is sick!",
+        "label": "We waited for her ... 2 o'clock.",
         "answers": [
-          {"id":1, "label":"Call"},
-          {"id":2, "label":"You call"},
-          {"id":3, "label":"You do call"},
-          {"id":4, "label":"Call to"}]
+          {"id":1, "label":"as far as"},
+          {"id":2, "label":"till"},
+          {"id":3, "label":"for"},
+          {"id":4, "label":"by"}]
       },
-      "correct": 1
+      "correct": 2
     },
     {
       "id": 25,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "... is the school?-Two miles away.",
+        "label": "We will call the doctor ... he feels better.",
         "answers": [
-          {"id":1, "label":"How much"},
-          {"id":2, "label":"How far"},
-          {"id":3, "label":"How long"},
-          {"id":4, "label":"How big"}]
+          {"id":1, "label":"unless"},
+          {"id":2, "label":"if"},
+          {"id":3, "label":"as"},
+          {"id":4, "label":"because"}]
       },
-      "correct": 2
+      "correct": 1
     },
     {
       "id": 26,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "I looked everywhere but I could not find ....",
+        "label": "I asked her to help me, but she ... ",
         "answers": [
-          {"id":1, "label":"him"},
-          {"id":2, "label":"himself"},
-          {"id":3, "label":"he"},
-          {"id":4, "label":"his"}]
+          {"id":1, "label":"won't"},
+          {"id":2, "label":"wouldn't"},
+          {"id":3, "label":"shouldn't"},
+          {"id":4, "label":"can't"}]
       },
-      "correct": 1
+      "correct": 2
     },
     {
       "id": 27,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "You ... go to the shop. I have already bought everything.",
+        "label": "He ... every day.",
         "answers": [
-          {"id":1, "label":"must"},
-          {"id":2, "label":"needn't"},
-          {"id":3, "label":"mustn't"},
-          {"id":4, "label":"have to"}]
+          {"id":1, "label":"used walk"},
+          {"id":2, "label":"used walking"},
+          {"id":3, "label":"used to walking"},
+          {"id":4, "label":"used to walk"}]
       },
-      "correct": 2
+      "correct": 4
     },
     {
       "id": 28,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "What's the time? It's ....",
+        "label": "They haven't been to England, ... ?",
         "answers": [
-          {"id":1, "label":"three quarter"},
-          {"id":2, "label":"a quarter and three"},
-          {"id":3, "label":"three past quarter"},
-          {"id":4, "label":"a quarter past three"}]
+          {"id":1, "label":"have they"},
+          {"id":2, "label":"have they been"},
+          {"id":3, "label":"they have"},
+          {"id":4, "label":"they haven't"}]
       },
-      "correct": 4
+      "correct": 1
     },
     {
       "id": 29,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "George said that he ... see us in three weeks.",
+        "label": "The book was ... interesting that I decided to buy it.",
         "answers": [
-          {"id":1, "label":"shall"},
-          {"id":2, "label":"would"},
-          {"id":3, "label":"will"},
-          {"id":4, "label":"want's to"}]
+          {"id":1, "label":"such"},
+          {"id":2, "label":"such an"},
+          {"id":3, "label":"so"},
+          {"id":4, "label":"as"}]
       },
-      "correct": 2
+      "correct": 3
     },
     {
       "id": 30,
       "type": "choose",
       "todo": "Выберите слова, которые необходимо вставить в предложение",
       "question": {
-        "label": "They ... so far.",
+        "label": "We should all help ...",
         "answers": [
-          {"id":1, "label":"didn't meet"},
-          {"id":2, "label":"haven't met"},
-          {"id":3, "label":"don't meet"},
-          {"id":4, "label":"weren't meet"}]
+          {"id":1, "label":"poor"},
+          {"id":2, "label":"the poor"},
+          {"id":3, "label":"the poors"},
+          {"id":4, "label":"a poor"}]
       },
       "correct": 2
     }
