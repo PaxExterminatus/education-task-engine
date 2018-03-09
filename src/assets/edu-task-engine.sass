@@ -12,20 +12,25 @@ $appName: 'edu-app'
   border: $action-border
   border-radius: 10px
   box-sizing: border-box
+%label
+  margin: 10px 0
+  font-size: $font-size-big
 //App
 .#{$appName}
   font-family: 'Rubik', sans-serif
   color: $color-font-dark
   //App.TaskSet
   &-set
+  &-set-label
+    @extend %label
+    border-bottom: 1px solid orange
   //App.TaskSet.Note
   &-task-counter
     font-size: $font-size-small
   &-task-todo
     font-size: $font-size-small
   &-task-question
-    margin-top: 10px
-    font-size: $font-size-big
+    @extend %label
   //App.TaskSet.Action
   &-actions
     max-width: $action-max-width
@@ -71,5 +76,5 @@ $appName: 'edu-app'
     @extend .#{$appName}-actions
 @media (max-width: 400px)
   .#{$appName}
-    &-task-question
+    &-task-question, &-set-label
       font-size: 6vw

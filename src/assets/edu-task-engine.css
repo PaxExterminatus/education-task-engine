@@ -8,16 +8,19 @@
   border-radius: 10px;
   box-sizing: border-box; }
 
+.edu-app-set-label, .edu-app-task-question {
+  margin: 10px 0;
+  font-size: 1.5em; }
+
 .edu-app {
   font-family: "Rubik", sans-serif;
   color: #2c3e50; }
+  .edu-app-set-label {
+    border-bottom: 1px solid orange; }
   .edu-app-task-counter {
-    font-size: 1rem; }
+    font-size: 0.9em; }
   .edu-app-task-todo {
-    font-size: 1rem; }
-  .edu-app-task-question {
-    margin-top: 10px;
-    font-size: 1.5rem; }
+    font-size: 0.9em; }
   .edu-app-actions, .edu-app-resume {
     max-width: 350px; }
   .edu-app-action {
@@ -44,7 +47,7 @@
   .edu-app-answer-radio:checked + .edu-app-answer-action {
     background-color: #d9f0a3; }
   .edu-app-result-percent {
-    font-size: 3rem;
+    font-size: 3em;
     padding: 5px; }
   .edu-app-result-counter {
     padding: 5px 0; }
@@ -52,7 +55,7 @@
     line-height: 1.3rem; }
 
 @media (max-width: 400px) {
-  .edu-app-task-question {
+  .edu-app-task-question, .edu-app-set-label {
     font-size: 6vw; } }
 
 /*# sourceMappingURL=edu-task-engine.css.map */

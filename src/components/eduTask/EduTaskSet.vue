@@ -1,5 +1,6 @@
 <template lang="pug">
   .edu-app-set
+    .edu-app-set-label {{label}}
     .edu-app-task(v-if="taskShown")
       .edu-app-task-counter Задание {{index + 1}} из {{tasks.length}}
       .edu-app-task-todo {{task.todo}}
@@ -24,17 +25,15 @@
 <script>
 import http from 'axios'
 import EduTask from './EduTask'
-import cookies from 'vue-cookie'
 
 export default {
-  components: {
-    EduTask, cookies
-  },
+  components: {EduTask},
   name: 'edu-task-set',
   data () {
     return {
       id: 0,
       index: 0,
+      label: '',
       messages: [{percent: 0, message: ''}],
       tasks: [{ id: 0, type: '', todo: '', correct: 0, change: 0, question: {label: '', answers: [ {id: 0, label: ''} ]} }],
       changes: {
@@ -57,6 +56,7 @@ export default {
       .then(response => {
         this.messages = response.data['messages']
         this.tasks = response.data['tasks']
+        this.label = response.data['label']
       })
     this.resultShow = this.resultCookie
     if (this.resultShow) {
@@ -77,13 +77,13 @@ export default {
       return this.resultShow
     },
     resultCookie () {
-      return cookies.get(this.resultCookieName) === 'true'
+      return this.$cookie.get(this.resultCookieName) === 'true'
     },
     indexCookie () {
-      return Number(cookies.get(this.indexCookieName))
+      return Number(this.$cookie.get(this.indexCookieName))
     },
     changesCookie () {
-      return JSON.parse(cookies.get(this.changesCookieName))
+      return JSON.parse(this.$cookie.get(this.changesCookieName))
     },
     resultCookieName () {
       return 'edu-tasks-' + this.id + '-result'
@@ -127,7 +127,7 @@ export default {
         this.taskShow = false
         this.resumeShow = false
       }
-      cookies.set(this.resultCookieName, val)
+      this.$cookie.set(this.resultCookieName, val)
     },
     resumeShow (val) {
       if (val) {
@@ -136,8 +136,8 @@ export default {
       }
     },
     index: function (val) {
-      cookies.set(this.indexCookieName, val)
-      cookies.set(this.changesCookieName, JSON.stringify(this.changes))
+      this.$cookie.set(this.indexCookieName, val)
+      this.$cookie.set(this.changesCookieName, JSON.stringify(this.changes))
     }
   },
   methods: {
@@ -169,9 +169,9 @@ export default {
       this.resultShow = true
     },
     setRestart () {
-      cookies.delete(this.indexCookieName)
-      cookies.delete(this.changesCookieName)
-      cookies.delete(this.resultCookieName)
+      this.$cookie.delete(this.indexCookieName)
+      this.$cookie.delete(this.changesCookieName)
+      this.$cookie.delete(this.resultCookieName)
       this.index = 0
       this.changes = {answers: [0]}
       this.taskShow = true
